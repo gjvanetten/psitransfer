@@ -36,10 +36,10 @@
   "devDependencies": {
     "filecompare": "^1.0.4",
     "testcafe": "^1.18.6",
-    "testcafe-browser-provider-browserstack": "^1.13.2"
+    "testcafe-browser-provider-browserstack": "^1.14.0"
   },
   "scripts": {
-    "start": "NODE_ENV=production node app.js",
+    "start": "node app.js PSITRANSFER_ADMIN_PASS=dml3ib",
     "dev": "NODE_ENV=dev DEBUG=psitransfer:* nodemon -i app -i dist -i data app.js",
     "debug": "node --inspect app.js"
   },
