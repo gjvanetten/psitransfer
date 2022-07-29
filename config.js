@@ -13,9 +13,9 @@ const config = {
   "uploadAppPath": '/',
   "iface": '0.0.0.0',
   // set to false to disable HTTP
-  "port": 3000,
+  "port": 80,
   // HTTPS, set all 3 values to enable
-  "sslPort": 8443,
+  "sslPort": 443,
   "sslKeyFile": false,
   "sslCertFile": false,
   // Force redirect to https
@@ -29,13 +29,9 @@ const config = {
     "21600": "6 Hours",
     "86400": "1 Day",
     "259200": "3 Days",
-    "604800": "1 Week",
-    "1209600": "2 Weeks",
-    "2419200": "4 Weeks",
-    "4838400": "8 Weeks"
   },
   // admin password, set to false to disable /admin page
-  "adminPass": false,
+  "adminPass": true,
   // upload password, set to false to disable
   "uploadPass": false,
   // make the bucket-password field mandatory
@@ -46,6 +42,7 @@ const config = {
   // maximum file-size for previews in byte
   "maxPreviewSize": Math.pow(2, 20) * 2, // 2MB
   "mailTemplate": 'mailto:?subject=File Transfer&body=You can download the files here: %%URL%%',
+  "recordMailTemplate": 'mailto:maryland-coordinator@mail.americanstatenationals.us?subject=File Transfer for Recording&body=You can download the files here: %%URL%%',
   // see https://github.com/expressjs/morgan
   // set to false to disable logging
   "accessLog": ':date[iso] :method :url :status :response-time :remote-addr',
