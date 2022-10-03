@@ -15,7 +15,6 @@ module.exports = {
   accessDenied: "Access denied!",
   login: "Login",
   email: "E-Mail",
-  recordEmail: "Email to Record",
   clipboard: "Clipboard",
   copyToClipboard: "Copy to clipboard",
   sendViaMail: "Send via E-Mail",

@@ -99,6 +99,11 @@
           && this.$store.state.config.mailTemplate
           && this.$store.state.config.mailTemplate.replace('%%URL%%', this.shareUrl);
       },
+      recordMailLnk: function() {
+        return this.$store.state.config
+          && this.$store.state.config.recordMailTemplate
+          && this.$store.state.config.recordMailTemplate.replace('%%URL%%', this.shareUrl);
+      },
       showLogin() {
         return this.uploadPassRequired && this.uploadPasswordWrong !== false;
       },

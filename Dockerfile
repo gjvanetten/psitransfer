@@ -3,7 +3,7 @@ FROM node:18-alpine
 ENV PSITRANSFER_UPLOAD_DIR=/data \
     NODE_ENV=production
 
-MAINTAINER Christoph Wiechert <wio@psitrax.de>
+MAINTAINER Jim Van Etten <jim.vanetten@gmail.com>
 
 RUN apk add --no-cache tzdata
 
