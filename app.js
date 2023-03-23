@@ -15,7 +15,7 @@ let server;
 if(config.port) {
   // HTTP Server
   server = app.listen(config.port, config.iface, () => {
-    console.log(`PsiTransfer listening on http://${config.iface}:${config.port}`);
+    console.log(`PsiTransfer listening on http://${config.iface}:${config.exposedPort}`);
     eventBus.emit('listen', server);
   });
 }

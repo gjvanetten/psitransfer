@@ -14,6 +14,7 @@ const config = {
   "iface": '0.0.0.0',
   // set to false to disable HTTP
   "port": 80,
+  "exposedPort": 3001,
   // HTTPS, set all 3 values to enable
   "sslPort": 443,
   "sslKeyFile": false,
